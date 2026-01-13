@@ -12,12 +12,6 @@ function createOrbitControls(camera, canvas) {
     // controls.enablePan = true;
     // controls.listenToKeyEvents(window);
 
-    //*** Limiting Rotation ***//
-    // controls.minAzimuthAngle = - Infinity;; // default
-    // controls.maxAzimuthAngle = Infinity;; // default
-    // controls.minPolarAngle = 0; // default
-    // controls.maxPolarAngle = Math.PI; // default
-
     controls.tick = () => controls.update();
     return controls;
 }

@@ -1,11 +1,12 @@
 {
   "dependencies": {
     "three": "^0.167.0",
+    "lil-gui": "^0.19.2",
     "three-subdivide": "^1.1.5"
   },
   "devDependencies": {
     "@types/three": "^0.167.1",
-    "lil-gui": "^0.19.2",
+    "typescript": "^5.9.2",
     "vite": "^5.3.5"
   },
   "scripts": {

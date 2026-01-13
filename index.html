@@ -4,16 +4,32 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="#">
-	<title>My first three.js app</title>
+	<title>Atomic Orbital Viewer</title>
 	<link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-	<script type="module" src="/main.js"></script>
+	<script type="module" src="/main.ts"></script>
 	<div id="scene-container" class="container">
-		<div id="panel" class="panel" style="top: 0px; left: 0px;">
+		<div id="intersection" class="panel" style="top: 0px; left: 0px;">
 			<div class="panel-header">
 				<span data-before="▸">Intersection</span>
+				<div class="draggable"></div>
+			</div>
+			<div class="panel-content">
+				<svg>
+					<g id="move-icon" class="move-icon" transform="translate(0,0)">
+						<rect x="0" y="0" width="24" height="24" fill="transparent"/>
+						<path d="M3 12 h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+						<path d="M12 5 l-4 4 h8 Z" fill="currentColor"/>
+						<path d="M12 19 l-4 -4 h8 Z" fill="currentColor"/>
+					</g>
+				</svg>
+			</div>
+		</div>
+		<div id="probability" class="panel" style="top: 40px; left: 0px;">
+			<div class="panel-header">
+				<span data-before="▸">Probability Distribution</span>
 				<div class="draggable"></div>
 			</div>
 			<div class="panel-content">

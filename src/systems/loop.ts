@@ -1,9 +1,14 @@
-import { Clock } from "three";
+import { Clock, PerspectiveCamera, Scene, WebGLRenderer } from "three";
 
 const clock = new Clock();
 
 class Loop {
-    constructor(camera, scene, renderer) {
+    camera: PerspectiveCamera;
+    scene: Scene;
+    renderer: WebGLRenderer;
+    updatables: any[];
+    
+    constructor(camera: PerspectiveCamera, scene: Scene, renderer: WebGLRenderer) {
         this.camera = camera;
         this.scene = scene;
         this.renderer = renderer;
